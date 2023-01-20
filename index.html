@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="d-flex p-3 align-items-center justify-content-between">
+      <h2>Todo Managment System</h2>
+      <button  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show Salary</button>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header bg-dark text-white">Adding a new task</div>
+          <div class="card-body">
+            <form name="myForm" >
+              <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                class="form-control mb-2"
+              />
+              <textarea
+                name="desc"
+                id=""
+                cols="30"
+                rows="4"
+                class="form-control mb-2"
+              ></textarea>
+
+              <select
+                class="form-select mb-2 form-select-sm"
+                name="staff"
+                aria-label=".form-select-sm example"
+              >
+                <option value=" ">Select a staff</option>
+                <option value="Ali">Ali</option>
+                <option value="Vali">Vali</option>
+                <option value="Jack">Jack</option>
+              </select>
+              <label for="startDate">Start Date</label>
+              <input
+                type="date"
+                name="startDate"
+                id="startDate"
+                class="form-control mb-2"
+              />
+              <label for="finishDate">Start Date</label>
+              <input
+                type="date"
+                name="finishDate"
+                id="finishDate"
+                class="form-control mb-2"
+              />
+              <select
+                class="form-select mb-2 form-select-sm"
+                name="status"
+                aria-label=".form-select-sm example"
+              >
+                <option value=" " >Select status</option>
+                <option value="Pending">Pending</option>
+                <option value="Doing">Doing</option>
+                <option value="Done">Done</option>
+              </select>
+              <input
+                type="number"
+                placeholder="Price"
+                class="form-control mb-2"
+                name="price"
+              />
+              <button  class="btn btn-success w-100 d-block addTask">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header bg-primary text-white">Pending</div>
+          <div class="card-body pending">
+     
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header bg-warning text-white">Doing</div>
+          <div class="card-body doing">
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header bg-success text-white">Done</div>
+          <div class="card-body done">
+         
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="card">
+          <div class="card-header bg-danger  text-white">Closed</div>
+          <div class="card-body closed">
+            
+               </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card">
+            <div class="card-header bg-secondary  text-white">Rejected</div>
+            <div class="card-body rejected">
+              
+                 </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+   
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
